@@ -28,7 +28,7 @@ input {
   padding: 1em;
 }
 
-.btn {
+.botao {
   background-color: white;
   height: 2em;
   border-radius: 1em;
@@ -37,7 +37,7 @@ input {
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
-.btn:hover {
+.botao:hover {
   background-color: green;
 }
 
@@ -50,7 +50,7 @@ input {
 }
 
 .user-table {
-  width: auto;
+  width: 600px;
 }
 
 th {

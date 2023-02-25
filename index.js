@@ -23,29 +23,39 @@ function printUser() {
     const table = document.querySelector('#user-table');
     const th = document.createElement('th');
     const addTh = table.appendChild(th);
+    addTh.textContent = nome.value;
   };
   printUserNome();
 
   function printUserSobrenome() {
     const table = document.querySelector('#user-table');
     const th = document.createElement('th');
-    table.appendChild(th);
+    const addTh = table.appendChild(th);
+    addTh.textContent = sobrenome.value;
   };
   printUserSobrenome();
 
   function printUserEmail() {
     const table = document.querySelector('#user-table');
     const th = document.createElement('th');
-    table.appendChild(th);
+    const addTh = table.appendChild(th);
+    addTh.textContent = email.value;
   };
-  printUserEmail();
+  printUserEmail();  
+};
+
+function breakLine() {
+  const table = document.querySelector('#user-table');
+  const breakLine = document.createElement('br');
+  table.appendChild(breakLine);
 };
 
 document.querySelector('#botao').addEventListener('click', (e) => {
   e.preventDefault();
   addUser();
-  cleanInput();
   printUser();
+  breakLine();
+  cleanInput();
   console.log(users)
 });
 
